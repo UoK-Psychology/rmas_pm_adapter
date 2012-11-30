@@ -8,4 +8,4 @@ EVENTS=[
         ]
 
 
-PM_API_PROPOSAL_ENDPOINT = 'http://0.0.0.0:3000/proposals/%s.json'
+PM_API_PROPOSAL_ENDPOINT = 'http://0.0.0.0:3000/proposals'
