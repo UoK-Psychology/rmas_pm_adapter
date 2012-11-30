@@ -1,0 +1,21 @@
+<rmas>
+    <message-type>ethics-approved</message-type><!-- RMAS message type -->
+    <CERIF
+        xmlns="urn:xmlns:org:eurocris:cerif-1.4-0" 
+        xsi:schemaLocation="urn:xmlns:org:eurocris:cerif-1.4-0http://www.eurocris.org/Uploads/Web%20pages/CERIF-1.4/CERIF_1.4_0.xsd" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        release="1.4"
+        date="2012-04-12"
+        sourceDatabase="OpenEthics">
+        
+        <cfProj>
+            <cfProjId>urn:rmas:kent:pmtool:a66328b4-5ed9-4baa-899e-6796d417c0fd</cfProjId> <!-- RMAS identifier --> 
+            <cfProj_Class>
+                <cfClassId>11111-11111-11111-11111</cfClassId><!-- this is the uuid for the status "Ethics Approved" -->
+                <cfClassSchemeId>759af93a-34ae-11e1-b86c-0800200c9a66</cfClassSchemeId><!--this is the uuid for the CERIF scheme "Activity Statuses"-->
+                <cfStartDate></cfStartDate>
+                <cfEndDate></cfEndDate>
+            </cfProj_Class>
+        </cfProj>
+    </CERIF> 
+</rmas>
