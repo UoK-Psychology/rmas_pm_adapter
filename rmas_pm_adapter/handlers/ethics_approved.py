@@ -1,4 +1,4 @@
-from rmas_pm_adapter.pm_api import set_ethics_approved
+from rmas_pm_adapter.pm_api import set_ethics_approved, get_proposal_for_rmas_id
 import logging
 def parse_ethics_approved_payload(payload):
     '''
@@ -48,9 +48,10 @@ def handle_event(payload):
     #parse the payload
     proposal_id = parse_ethics_approved_payload(payload)
     
+    proposal = get_proposal_for_rmas_id(proposal_id)
     try:
         #update the proposal to set ethics_approved as true
-        set_ethics_approved(proposal_id)
+        set_ethics_approved(proposal['id'])
     except ValueError as e:
         logging.info(e)
         
