@@ -1,0 +1,4 @@
+include *.txt
+include *.md
+include *.xml
+recursive-include docs *.txt
